@@ -1,4 +1,4 @@
-// mhmbkoonipoiljjjplkhojnbcmkjnfac
+// mejebeckdfiannhkpfboappagkbbjiif
 
 window.onload = () => {
   const prevBtn = document.querySelector('button.control-btn__prev');
