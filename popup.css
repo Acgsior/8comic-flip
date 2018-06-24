@@ -1,0 +1,8 @@
+.control-container button {
+  padding: 5px 10px;
+  background-color: #AF2F15;
+  color: #ffffff;
+  margin: 10px;
+  border: 1px solid #7F1F05;
+  border-radius: 5px;
+}

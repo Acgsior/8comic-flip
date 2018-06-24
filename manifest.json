@@ -1,0 +1,19 @@
+{
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "crunchyroll.png",
+    "default_title": "FixFunc8comic"
+  },
+  "content_scripts": [
+    {
+      "js": ["contentScript.js"],
+      "matches": ["http://8comic.se/*"],
+      "run_at": "document_idle"
+    }
+  ],
+  "description": "Fix func on site 8comic.se",
+  "manifest_version": 2,
+  "name": "FixFunc8comic",
+  "permissions": ["storage", "tabs", "http://8comic.se/*"],
+  "version": "1.0"
+}
