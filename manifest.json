@@ -1,24 +1,35 @@
 {
   "browser_action": {
-    "default_popup": "popup.html",
     "default_icon": "crunchyroll.png",
+    "default_popup": "popup.html",
     "default_title": "8comic-flip"
   },
   "content_scripts": [
     {
-      "js": ["contentScript.js"],
-      "matches": ["http://8comic.se/*"],
+      "js": [
+        "contentScript.js"
+      ],
+      "matches": [
+        "http://8comic.se/*"
+      ],
       "run_at": "document_idle"
     }
   ],
   "description": "The Chrome extension to fix the manga image fliping of 8comic.se",
-  "manifest_version": 2,
-  "name": "8comic-flip",
-  "permissions": ["storage", "tabs", "http://8comic.se/*"],
-  "version": "1.0",
   "icons": {
     "128": "crunchyroll.png",
     "16": "crunchyroll.png",
     "48": "crunchyroll.png"
-  }
+  },
+  "manifest_version": 2,
+  "name": "8comic-flip",
+  "permissions": [
+    "storage",
+    "tabs",
+    "http://8comic.se/*"
+  ],
+  "version": "1.0",
+  "web_accessible_resources": [
+    "loading.gif"
+  ]
 }
